@@ -1,0 +1,64 @@
+.post {
+	margin-top: 1rem;
+}
+
+.post > a {
+	text-decoration: none;
+}
+
+.post__card {
+	color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	background-color: #25282c;
+	box-shadow: 0 32px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.post__cardHeader {
+	margin-top: 0.5rem;
+	padding: 0 1rem;
+}
+
+.post__cardHeader > h2 {
+	margin-bottom: 0.2rem;
+}
+
+.post__cardFooter > p {
+	line-height: 3.6;
+}
+
+.post__cardHeader .content {
+	max-height: 120px;
+	-webkit-line-clamp: 4;
+}
+
+.post__cardHeader .date {
+	color: #686e78;
+	margin-top: 0.6rem;
+}
+
+.post__cardBody {
+	margin: 1rem 0;
+}
+
+.post__cardBody > img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.post__cardFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.MuiSvgIcon-root {
+	color: #a9abb3;
+}
+
+@media (max-width: 1000px) {
+	.app__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
