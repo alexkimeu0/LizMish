@@ -58,7 +58,36 @@
 }
 
 @media (max-width: 1000px) {
-	.app__container {
+	.posts {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.posts {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1000px) {
+	.posts {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0 1rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.posts {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.posts {
+		grid-template-columns: 1fr;
+		padding: 0 3rem;
 	}
 }

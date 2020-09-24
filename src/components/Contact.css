@@ -1,0 +1,30 @@
+.contact {
+	max-width: 800px;
+	margin: auto;
+}
+
+.contact__container {
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+.contact__container > p {
+	line-height: 1.8;
+}
+
+.contact__icons {
+	margin: 1rem 0;
+}
+
+.contact__icons .MuiSvgIcon-root {
+	font-size: 4rem;
+}
+
+.contact__icons .MuiSvgIcon-root:not(:last-child) {
+	margin: 0 0.5rem;
+}

@@ -5,13 +5,11 @@
 }
 
 html {
-	font-family: DejaVuSansMono, monospace, sans-serif;
+	font-family: "Inconsolata", monospace;
 	overflow-x: hidden;
-	overflow-y: scroll;
 }
 
 body {
-	overflow-y: scroll;
 	background-color: #151618;
 }
 
@@ -21,35 +19,48 @@ body {
 	margin: auto;
 }
 
-.app {
-	margin-bottom: 1rem;
+.navbar {
+	height: 50px;
+	border-bottom: 1px solid rgba(244, 245, 246, 0.12);
 }
 
-.app__container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1rem;
+.navbar__container {
+	width: 96vw;
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	list-style: none;
+}
+
+li:not(:last-child) {
+	margin: 0 1.5rem;
+}
+
+li a {
+	color: #a9abb3;
+	text-decoration: none;
+	font-weight: bold;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-@media (max-width: 1000px) {
-	.app__container {
-		grid-template-columns: repeat(3, 1fr);
-		padding: 0 1rem;
-	}
+li a:hover {
+	color: #686e78;
 }
 
-@media (max-width: 800px) {
-	.app__container {
-		grid-template-columns: repeat(2, 1fr);
-		padding: 0 2rem;
-	}
+.navbar__logo a > img {
+	height: 60px;
 }
 
-@media (max-width: 600px) {
-	.app__container {
-		grid-template-columns: 1fr;
-		padding: 0 3rem;
-	}
+.app {
+	margin-bottom: 1rem;
 }

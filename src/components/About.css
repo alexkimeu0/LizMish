@@ -1,0 +1,30 @@
+.about {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about__container {
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+.about__container > img {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+
+.about__container > h3 {
+	margin: 0.25rem 0;
+}
+
+.about__container > p {
+	margin: 0.25rem 0;
+	line-height: 1.7;
+}
